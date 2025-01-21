@@ -214,7 +214,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="./index2.html" class="nav-link">
+                                        <a href="{{ route('sistema.index') }}" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Concluídos
                                                 <span class="right badge badge-success">0</span>

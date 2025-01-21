@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title', 'AGR')
+@section('title', 'Concluídos')
 @section('content')
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -42,55 +42,15 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Cadastrar</h3>
+                                <h3 class="card-title">Concluídos</h3>
                             </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    @if ($errors->any())
-                                        <div class="alert alert-danger text-center" style="margin: 10px;">
-                                            <ul>
-                                                @foreach ($errors->all() as $error)
-                                                    <li style="text-align: center">{{ $error }}</li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    @endif
-                                    @if (session('msg'))
-                                        <div class="row text-center">
-                                            <div class="col-md-12" \>
-                                                <div class="alert alert-success text-center"
-                                                    style="color: white; margin: 10px;">
-                                                    {{ session('msg') }}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endif
-
-                                </div>
-                            </div>
-
-                            <form action="" method="post"
-                                enctype="multipart/form-data">
-                                @csrf
-
-                                <div class="card-body">
-                                    <label for="">Nome</label>
-                                    <input type="text" name="nome" class="form-control">
-                                    <label for="">Local</label>
-                                    <input type="text" name="local" class="form-control">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <label for="">Data</label>
-                                            <input type="date" name="data" class="form-control  ">
-                                        </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        dsadsadas
                                     </div>
                                 </div>
-
-                                <div class="card-footer">
-                                    <button type="submit" class="btn btn-default">Cadastrar</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,4 +59,3 @@
         <!-- /.content -->
     </div>
 @endsection
-
