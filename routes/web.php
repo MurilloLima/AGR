@@ -28,6 +28,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/sistemas', [SistemaController::class, 'index'])->name('sistema.index');
     Route::get('/sistema/create/', [SistemaController::class, 'create'])->name('sistema.create');
     Route::post('/sistema/store/', [SistemaController::class, 'store'])->name('sistema.store');
+    Route::get('/sistema/desenvolvimento/', [SistemaController::class, 'desenvolvimento'])->name('sistema.desenvolvimento');
+
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

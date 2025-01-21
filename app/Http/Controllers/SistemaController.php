@@ -20,7 +20,7 @@ class SistemaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.sistemas.create');
     }
 
     /**
@@ -34,9 +34,10 @@ class SistemaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Sistema $sistema)
+    public function desenvolvimento()
     {
-        //
+        return view('admin.pages.sistemas.desenvolvimento');
+
     }
 
     /**

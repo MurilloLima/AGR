@@ -206,7 +206,7 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="./index.html" class="nav-link">
+                                        <a href="{{ route('sistema.create') }}" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Cadastrar
                                                 {{-- <span class="right badge badge-success">0</span> --}}
@@ -222,7 +222,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="./index2.html" class="nav-link">
+                                        <a href="{{ route('sistema.desenvolvimento') }}" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Em desenvolvimento
                                                 <span class="right badge badge-success">0</span>
